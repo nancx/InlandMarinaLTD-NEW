@@ -1,0 +1,14 @@
+C:\Users\bubbl\Documents\SAIT\.NET Applications\Class Exercises\InlandMarinaLTD\InlandMarinaClasses\obj\Debug\net7.0\InlandMarinaClasses.csproj.AssemblyReference.cache
+C:\Users\bubbl\Documents\SAIT\.NET Applications\Class Exercises\InlandMarinaLTD\InlandMarinaClasses\obj\Debug\net7.0\InlandMarinaClasses.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bubbl\Documents\SAIT\.NET Applications\Class Exercises\InlandMarinaLTD\InlandMarinaClasses\obj\Debug\net7.0\InlandMarinaClasses.AssemblyInfoInputs.cache
+C:\Users\bubbl\Documents\SAIT\.NET Applications\Class Exercises\InlandMarinaLTD\InlandMarinaClasses\obj\Debug\net7.0\InlandMarinaClasses.AssemblyInfo.cs
+C:\Users\bubbl\Documents\SAIT\.NET Applications\Class Exercises\InlandMarinaLTD\InlandMarinaClasses\obj\Debug\net7.0\InlandMarinaClasses.csproj.CoreCompileInputs.cache
+C:\Users\bubbl\Documents\SAIT\.NET Applications\Class Exercises\InlandMarinaLTD\InlandMarinaClasses\bin\Debug\net7.0\InlandMarinaClasses.deps.json
+C:\Users\bubbl\Documents\SAIT\.NET Applications\Class Exercises\InlandMarinaLTD\InlandMarinaClasses\bin\Debug\net7.0\InlandMarinaClasses.runtimeconfig.json
+C:\Users\bubbl\Documents\SAIT\.NET Applications\Class Exercises\InlandMarinaLTD\InlandMarinaClasses\bin\Debug\net7.0\InlandMarinaClasses.dll
+C:\Users\bubbl\Documents\SAIT\.NET Applications\Class Exercises\InlandMarinaLTD\InlandMarinaClasses\bin\Debug\net7.0\InlandMarinaClasses.pdb
+C:\Users\bubbl\Documents\SAIT\.NET Applications\Class Exercises\InlandMarinaLTD\InlandMarinaClasses\obj\Debug\net7.0\InlandMarinaClasses.dll
+C:\Users\bubbl\Documents\SAIT\.NET Applications\Class Exercises\InlandMarinaLTD\InlandMarinaClasses\obj\Debug\net7.0\refint\InlandMarinaClasses.dll
+C:\Users\bubbl\Documents\SAIT\.NET Applications\Class Exercises\InlandMarinaLTD\InlandMarinaClasses\obj\Debug\net7.0\InlandMarinaClasses.pdb
+C:\Users\bubbl\Documents\SAIT\.NET Applications\Class Exercises\InlandMarinaLTD\InlandMarinaClasses\obj\Debug\net7.0\InlandMarinaClasses.genruntimeconfig.cache
+C:\Users\bubbl\Documents\SAIT\.NET Applications\Class Exercises\InlandMarinaLTD\InlandMarinaClasses\obj\Debug\net7.0\ref\InlandMarinaClasses.dll

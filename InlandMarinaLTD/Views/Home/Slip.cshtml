@@ -1,0 +1,46 @@
+﻿@model IEnumerable<InlandMarinaClasses.Slip>
+
+@{
+    ViewData["Title"] = "Slips";
+}
+
+<h1>Available Slips</h1>
+
+<div class="form-group">
+    <label for="ddlDock">Select Dock:</label>
+    <select class="form-control" id="ddlDock">
+        <option value="">All Docks</option>
+        <option value="1">Dock A</option>
+        <option value="2">Dock B</option>
+        <option value="3">Dock C</option>
+    </select>
+</div>
+
+@*<div id="slipsContainer">
+    @Html.Partial("_SlipsPartial", Model)
+</div>
+
+@section Scripts {
+    <script>
+        $(function () {
+            $("#ddlDock").change(function () {
+                var dockId = $(this).val();
+                loadFilteredSlips(dockId);
+            });
+
+            function loadFilteredSlips(dockId) {
+                $.ajax({
+                    url: "@Url.Action("GetFilteredSlips", "Home")",
+                    data: { dockId: dockId },
+                    type: "GET",
+                    success: function (result) {
+                        $("#slipsContainer").html(result);
+                    },
+                    error: function (xhr, status, error) {
+                        console.error(error);
+                    }
+                });
+            }
+        });
+    </script>
+}*@

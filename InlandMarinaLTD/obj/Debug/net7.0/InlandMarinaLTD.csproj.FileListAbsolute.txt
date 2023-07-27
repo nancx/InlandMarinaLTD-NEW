@@ -1,0 +1,8 @@
+C:\Users\bubbl\Documents\SAIT\.NET Applications\Class Exercises\InlandMarinaLTD\InlandMarinaLTD\obj\Debug\net7.0\InlandMarinaLTD.csproj.AssemblyReference.cache
+C:\Users\bubbl\Documents\SAIT\.NET Applications\Class Exercises\InlandMarinaLTD\InlandMarinaLTD\obj\Debug\net7.0\InlandMarinaLTD.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bubbl\Documents\SAIT\.NET Applications\Class Exercises\InlandMarinaLTD\InlandMarinaLTD\obj\Debug\net7.0\InlandMarinaLTD.AssemblyInfoInputs.cache
+C:\Users\bubbl\Documents\SAIT\.NET Applications\Class Exercises\InlandMarinaLTD\InlandMarinaLTD\obj\Debug\net7.0\InlandMarinaLTD.AssemblyInfo.cs
+C:\Users\bubbl\Documents\SAIT\.NET Applications\Class Exercises\InlandMarinaLTD\InlandMarinaLTD\obj\Debug\net7.0\InlandMarinaLTD.csproj.CoreCompileInputs.cache
+C:\Users\bubbl\Documents\SAIT\.NET Applications\Class Exercises\InlandMarinaLTD\InlandMarinaLTD\obj\Debug\net7.0\InlandMarinaLTD.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\bubbl\Documents\SAIT\.NET Applications\Class Exercises\InlandMarinaLTD\InlandMarinaLTD\obj\Debug\net7.0\InlandMarinaLTD.RazorAssemblyInfo.cache
+C:\Users\bubbl\Documents\SAIT\.NET Applications\Class Exercises\InlandMarinaLTD\InlandMarinaLTD\obj\Debug\net7.0\InlandMarinaLTD.RazorAssemblyInfo.cs
