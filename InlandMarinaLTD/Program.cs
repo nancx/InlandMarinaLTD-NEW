@@ -29,7 +29,6 @@ if (!app.Environment.IsDevelopment())
     app.UseExceptionHandler("/Home/Error");
 }
 
-
 app.UseStaticFiles();
 
 app.UseRouting();
@@ -38,8 +37,11 @@ app.UseAuthentication(); // UseAuthentication should come before UseAuthorizatio
 
 app.UseAuthorization();
 
+
+
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
+
 
 app.Run();
