@@ -17,5 +17,12 @@ namespace InlandMarinaClasses
         //navigation properties
         public virtual Customer Customer { get; set; }
         public virtual Slip Slip { get; set; }
+
+        public static List<Lease> GetSlips(InlandMarinaContext db)
+        {
+            List<Lease> leases = db.Leases.ToList();
+
+            return leases;
+        }
     }
 }

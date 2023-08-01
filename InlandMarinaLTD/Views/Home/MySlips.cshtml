@@ -1,0 +1,10 @@
+﻿@model List<InlandMarinaClasses.Slip>
+
+<h2>My Leased Slips</h2>
+
+@foreach (var slip in Model)
+{
+    <div>
+        Slip ID: @slip.ID
+    </div>
+}

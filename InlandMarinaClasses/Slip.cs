@@ -15,8 +15,17 @@ namespace InlandMarinaClasses
         public int Length { get; set; }
         public int DockID { get; set; }
 
+        public bool IsAvailable { get; set; }
+
         // navigation properties
         public virtual Dock Dock { get; set; }
         public virtual ICollection<Lease> Leases { get; set; }
+
+        public static List<Slip> GetSlips(InlandMarinaContext db)
+        {
+            List<Slip> slips = db.Slips.ToList();
+
+            return slips;
+        }
     }
 }

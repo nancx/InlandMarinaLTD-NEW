@@ -22,5 +22,12 @@ namespace InlandMarinaClasses
 
         // navigation property
         public virtual ICollection<Slip> Slips { get; set; }
+
+        public static List<Dock> GetSlips(InlandMarinaContext db)
+        {
+            List<Dock> docks = db.Docks.ToList();
+
+            return docks;
+        }
     }
 }

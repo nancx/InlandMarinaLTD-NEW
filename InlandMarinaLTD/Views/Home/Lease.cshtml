@@ -1,0 +1,14 @@
+﻿@model List<InlandMarinaClasses.Slip>
+
+<h2>Lease a Slip</h2>
+
+@foreach (var slip in Model)
+{
+    <div>
+        Slip ID: @slip.ID
+
+        <form method="post" action="/Lease/LeaseSlip/@slip.ID">
+            <input type="submit" value="Lease">
+        </form>
+    </div>
+}

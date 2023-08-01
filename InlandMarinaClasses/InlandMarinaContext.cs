@@ -1,36 +1,40 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
+
 namespace InlandMarinaClasses
 {
-    public class ContextClass
-    {
         public class InlandMarinaContext : DbContext
         {
-            public InlandMarinaContext() : base() { }
+        public InlandMarinaContext(DbContextOptions<InlandMarinaContext> options) : base(options) { }
 
-            public DbSet<Customer> Customers { get; set; }
+        public DbSet<Customer> Customers { get; set; }
             public DbSet<Dock> Docks { get; set; }
             public DbSet<Slip> Slips { get; set; }
             public DbSet<Lease> Leases { get; set; }
 
-            protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-            {
-                //Change the connection string here for your home computer/lab computer
-                optionsBuilder.UseSqlServer(@"Server=NANCYS-PC\SQLEXPRESS;
-                                          Database=InlandMarina;
-                                          Trusted_Connection=True;"
-                );
-            }
+        //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        //{
+        //    //Change the connection string here for your home computer/lab computer
+        //    optionsBuilder.UseSqlServer(@"Server=NANCYS-PC\SQLEXPRESS;
+        //                                  Database=InlandMarina;
+        //                                  Trusted_Connection=True;
+        //                                    TrustServerCertificate=true;"
 
-            protected override void OnModelCreating(ModelBuilder modelBuilder)
+        //    );
+        //}
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
             {
                 base.OnModelCreating(modelBuilder);
 
                 //seed data created here
+                /*
+                 * Adding annotations to include username and password to existing customers
+                 */
                 modelBuilder.Entity<Customer>().HasData(
-                    new Customer { ID = 1, FirstName = "John", LastName = "Doe", Phone = "265-555-1212", City = "Phoenix" },
-                    new Customer { ID = 2, FirstName = "Sara", LastName = "Williams", Phone = "403-555-9585", City = "Calgary" },
-                    new Customer { ID = 3, FirstName = "Ken", LastName = "Wong", Phone = "802-555-3214", City = "Kansas City" }
+                    new Customer { ID = 1, FirstName = "John", LastName = "Doe", Username = "jdoe", Password = "password", Phone = "265-555-1212", City = "Phoenix" },
+                    new Customer { ID = 2, FirstName = "Sara", LastName = "Williams", Username = "swilliams", Password = "password", Phone = "403-555-9585", City = "Calgary" },
+                    new Customer { ID = 3, FirstName = "Ken", LastName = "Wong", Username = "kwong", Password = "password", Phone = "802-555-3214", City = "Kansas City" }
                 );
 
                 modelBuilder.Entity<Dock>().HasData(
@@ -140,4 +144,3 @@ namespace InlandMarinaClasses
             }
         }
     }
-}

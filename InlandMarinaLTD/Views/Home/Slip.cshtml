@@ -8,7 +8,7 @@
 
 <div class="form-group">
     <label for="ddlDock">Select Dock:</label>
-    <select class="form-control" id="ddlDock">
+    <select class="form-control" name="id" id="ddlDock">
         <option value="">All Docks</option>
         <option value="1">Dock A</option>
         <option value="2">Dock B</option>
@@ -16,7 +16,7 @@
     </select>
 </div>
 
-@*<div id="slipsContainer">
+<div id="slipsContainer">
     @Html.Partial("_SlipsPartial", Model)
 </div>
 
@@ -25,22 +25,18 @@
         $(function () {
             $("#ddlDock").change(function () {
                 var dockId = $(this).val();
-                loadFilteredSlips(dockId);
+                filterSlipsByDock(dockId); // Call the filtering function
             });
 
-            function loadFilteredSlips(dockId) {
-                $.ajax({
-                    url: "@Url.Action("GetFilteredSlips", "Home")",
-                    data: { dockId: dockId },
-                    type: "GET",
-                    success: function (result) {
-                        $("#slipsContainer").html(result);
-                    },
-                    error: function (xhr, status, error) {
-                        console.error(error);
-                    }
-                });
+            // Filter the displayed slips based on the selected dock
+            function filterSlipsByDock(dockId) {
+                $("#slipsContainer").find(".slip-item").hide(); // Hide all slips first
+                if (dockId === "") {
+                    $("#slipsContainer").find(".slip-item").show(); // Show all slips if "All Docks" is selected
+                } else {
+                    $("#slipsContainer").find(".slip-item[data-dock='" + dockId + "']").show(); // Show slips of the selected dock
+                }
             }
         });
     </script>
-}*@
+}

@@ -55,7 +55,6 @@ a {
 footer {
     background-color: #e4e4e4;
     color: #fff;
-    padding: 10px;
     text-align: center;
 }
 
@@ -65,7 +64,7 @@ footer {
     padding: 20px;
 }
 
-/*.privacy-policy-section {
+.privacy-policy-section {
     margin-bottom: 30px;
 }
 
@@ -93,4 +92,10 @@ footer {
 .privacy-policy-section ol li {
     list-style-type: decimal;
     margin-left: 20px;
-}*/
+    background-color: aqua;
+}
+
+img {
+    width: 700px;
+    height: 150px;
+}

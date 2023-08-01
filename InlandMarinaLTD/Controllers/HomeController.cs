@@ -1,6 +1,5 @@
 ﻿using InlandMarinaLTD.Models;
 using Microsoft.AspNetCore.Mvc;
-using InlandMarinaLTD;
 using System.Diagnostics;
 using InlandMarinaClasses;
 
@@ -10,10 +9,13 @@ namespace InlandMarinaLTD.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly InlandMarinaContext _context;
 
-        public HomeController(ILogger<HomeController> logger)
+
+        public HomeController(ILogger<HomeController> logger, InlandMarinaContext context)
         {
             _logger = logger;
+            _context = context;
         }
 
         public IActionResult Index()
@@ -30,9 +32,42 @@ namespace InlandMarinaLTD.Controllers
         {
             return View();
         }
+
+        public IActionResult Lease()
+        {
+            return RedirectToAction("Lease", "Slip");
+        }
+
+        public IActionResult MySlips()
+        {
+            return RedirectToAction("MySlips", "Slip");
+        }
+
         public IActionResult Slip()
         {
-            return View();
+            List<Slip> slips = _context.Slips.ToList();
+            List<Dock> docks = _context.Docks.ToList();
+
+            foreach (var slip in slips)
+            {
+                slip.Dock = docks.FirstOrDefault(d => d.ID == slip.DockID);
+            }
+
+            return View(slips);
+        }
+
+        [HttpPost]
+        public IActionResult Slip(int id)
+        {
+            List<Slip> slips = _context.Slips.ToList();
+            List<Dock> docks = _context.Docks.ToList();
+
+            foreach (var slip in slips)
+            {
+                slip.Dock = docks.FirstOrDefault(d => d.ID == slip.DockID);
+            }
+
+            return View(slips);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
